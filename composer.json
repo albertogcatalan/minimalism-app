@@ -1,0 +1,27 @@
+{
+    "name": "albertogcatalan/minimalism-app",
+    "description": "The Minimalism Framework app",
+    "keywords": ["framework", "minimalism"],
+    "license": "MIT",
+    "type": "project",
+    "homepage": "https://albertogcatalan.com",
+    "authors": [
+        {
+            "name": "Alberto González",
+            "email": "alberto@gcatalan.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "albertogcatalan/minimalism-framework": "^1.6"
+    },
+    "autoload": {
+        "psr-4": { "Minimalism\\App\\": "App/", "Minimalism\\Cli\\Commands\\": "Commands/" }
+    },
+    "scripts": {
+        "post-create-project-cmd": [
+            "minimalism-cli welcome"
+        ]
+    },
+    "minimum-stability": "dev"
+}
